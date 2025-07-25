@@ -1,6 +1,9 @@
 export const testConfigLocal = {
     oAuth: {
-        githubToken: '',
+        githubToken: 'your-github-token-here',
         baseURL: 'https://api.github.com',
+    },
+    api: {
+        baseURL: 'https://jsonplaceholder.typicode.com',
     }
 };

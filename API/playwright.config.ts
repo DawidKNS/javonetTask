@@ -41,7 +41,10 @@ export default defineConfig<CustomTestOptions>({
             oAuth: {
                 baseURL: configPath.oAuth.baseURL,
                 githubToken: configPath.oAuth.githubToken,
-            }
+            },
+            api: {
+                baseURL: configPath.api.baseURL,
+            },
         }
     },
     // Configure projects for major browsers.

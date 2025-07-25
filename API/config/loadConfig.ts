@@ -3,10 +3,14 @@ import { PlaywrightWorkerOptions, PlaywrightTestOptions } from "@playwright/test
 declare global {
     interface TestConfig {
         oAuth: OAuth;
+        api: Api;
     }
 
     interface OAuth {
         githubToken: string;
+        baseURL: string;
+    }
+    interface Api {
         baseURL: string;
     }
 
