@@ -55,6 +55,24 @@ export default defineConfig<CustomTestOptions>({
                 },
             },
         },
+        {
+            name: 'Firefox',
+            use: {
+                ...devices['Desktop Firefox'],
+                contextOptions: {
+                    reducedMotion: "reduce",
+                },
+            },
+        },
+        {
+            name: 'WebKit',
+            use: {
+                ...devices['Desktop Safari'],
+                contextOptions: {
+                    reducedMotion: "reduce",
+                },
+            },
+        },
     ],
 
     //Configuration for the expect assertion library.

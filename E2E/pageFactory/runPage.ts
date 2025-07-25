@@ -14,6 +14,6 @@ export class RunPage {
 	 * Open test browser and navigate to URL
 	 */
 	public async navigateToURL(): Promise<void> {
-		await this.page.goto(testConfig.use!.testConfig!.web.url);
+		await this.page.goto(testConfig.use!.testConfig!.web.url, { waitUntil: 'load' });
 	}
 }

@@ -24,6 +24,10 @@
   },
   "include": [
     "./tests/*.test.ts",
+    "./pageFactory/*/.ts",
+    "./fixture/*/.ts",
+    "./lib/*/.ts",
+    "./playwright.config.ts"
   ],
   "exclude": [
     "../node_modules"
