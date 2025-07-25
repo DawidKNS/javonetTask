@@ -7,7 +7,7 @@ test.beforeEach(async ({ runPage }) => {
 	response = await runPage.navigateToURL();
 });
 
-test.describe('Task 1', async () => {
+test.describe('UI Test', async () => {
 	test('Visibility of key UI elements', async ({ startPage }): Promise<void> => {
 		expect(await startPage.elements.contentWrapper).toBeVisible();
 		expect(await startPage.elements.header).toBeVisible();

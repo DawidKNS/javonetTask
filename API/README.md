@@ -31,3 +31,4 @@ https://playwright.dev/docs/running-tests#run-tests-in-ui-mode
 - run command: "npm install"
 - run command: "npx playwright install"
 - run all tests: "npx playwright test" - when the tests are finished, it will run ise report automatically
+- you can check report in folder playwright-report
