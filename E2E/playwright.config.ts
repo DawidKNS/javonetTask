@@ -19,7 +19,6 @@ export default defineConfig<CustomTestOptions>({
     //test file
     testDir: "./tests/",
     outputDir: "./test-results/",
-    snapshotDir: "./screenshotTemplate",
 
     // Reporter to use
     reporter: [

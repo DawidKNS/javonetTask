@@ -12,6 +12,7 @@
   "dependencies": {
     "@playwright/test": "^1.44",
     "playwright": "^1.44",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2"
   },
   "repository": {

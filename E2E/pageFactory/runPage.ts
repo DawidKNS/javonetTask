@@ -11,9 +11,10 @@ export class RunPage {
 	}
 
 	/**
-	 * Open test browser and navigate to URL
+	 * Open test browser and navigate to URLs
 	 */
-	public async navigateToURL(): Promise<void> {
-		await this.page.goto(testConfig.use!.testConfig!.web.url, { waitUntil: 'load' });
+	public async navigateToURL(): Promise<import('@playwright/test').Response | null> {
+		await this.page.waitForLoadState('networkidle');
+		return await this.page.goto(testConfig.use!.testConfig!.web.url, { waitUntil: 'load' });
 	}
 }
